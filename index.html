@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Mots Cachés</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="word-search-container">
+        <h1>Jeu de Mots Cachés</h1>
+        <div id="game-area">
+            <div id="word-grid"></div>
+            <div id="words-to-find">
+                <p>Mots à trouver :</p>
+                <ul id="word-list">
+                    <!-- Liste des mots à trouver -->
+                </ul>
+                <button onclick="generateNewWords()">Générer de nouveaux mots</button>
+            </div>
+        </div>
+        <div id="timer">Temps restant : 03:00</div>
+        <button onclick="resetGame()">Réinitialiser le Jeu</button>
+        <button onclick="startGame()">Démarrer le Minuteur</button>
+        <div id="messages"></div> <!-- Section pour les messages -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

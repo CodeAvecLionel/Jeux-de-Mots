@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#word-search-container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#game-area {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#word-grid {
+    display: inline-grid;
+    grid-template-columns: repeat(10, 40px); /* Ajustez selon la taille de la grille */
+    grid-template-rows: repeat(10, 40px); /* Ajustez selon la taille de la grille */
+    gap: 1px;
+    margin: 20px;
+    border: 1px solid #999;
+    background-color: #fff;
+}
+
+#word-grid div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#words-to-find {
+    margin-left: 20px;
+}
+
+#word-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#word-list li {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    user-select: none;
+}
+
+#word-list li:hover {
+    background-color: #e0e0e0;
+}
+
+#timer {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#messages {
+    margin-top: 20px;
+    font-size: 18px;
+    color: red;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
